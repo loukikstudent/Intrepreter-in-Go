@@ -16,7 +16,7 @@ const (
     INT = "INT"
 
     // Operators
-    ASSAIGN = "="
+    ASSIGN = "="
     PLUS = "+"
 
     // Delimiters
