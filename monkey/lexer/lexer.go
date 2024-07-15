@@ -36,3 +36,15 @@ func TestNextToken(t *testing.T) {
         }
     }
 }
+
+type Lexer struct{
+    input string
+    position int // current postiion in inputs ( points to the current char)
+    readPostion int // current reading position in input (after current char)
+    ch byte // current char under examination
+}
+
+func New(input string) *Lexer{
+    l := &Lexer{input: input}
+    return l
+}
